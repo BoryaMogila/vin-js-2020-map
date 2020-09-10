@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+	<img style="
+					border: none;
+					box-shadow: none;
+		height: 160px;
+		position: fixed;
+		right: 10px;
+		top: 26px;
+		" src="images/vin_js.jpg">
+	<img style="
+					border: none;
+					box-shadow: none;
+		position: fixed;
+		left: 10px;
+		bottom: 26px;
+		height: 30px;
+		" src="images/dom.ria.png">
+	<img style="
+					border: none;
+					box-shadow: none;
+		height: 30px;
+		position: fixed;
+		left: 10px;
+		bottom: 66px;
+		" src="images/auto.ria.png">
+	<img style="
+					border: none;
+					box-shadow: none;
+		height: 30px;
+		position: fixed;
+		left: 10px;
+		bottom: 106px;
+    	" src="images/ria.png">
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>100,000 objects</h1>
+					<h4>need to be displayed</h4>
+					<br />
+					<br />
+					<br />
+					<div style="text-align: right; font-size: 14px">
+						<b>Борис Могила</b>
+						<p>DOM.RIA (напрям “Новобудови України”)</p>
+					</div>
+				</section>
+				<section>
+					<img src="images/vin_js.jpg" width="400" />
+					<div>
+						<a target="_blank" href="http://vinnytsiajs.org/">vinnytsiajs.org</a>
+					</div>
+				</section>
+				<section>
+					<img height="400" style="margin-right: 50px" src="images/map1.png" />
+					<img height="400" src="images/map2.png" />
+					<span style="margin-right: 180px">20000</span>
+					VS
+					<span style="margin-left: 180px">180000</span>
+				</section>
+				<section>
+					<img src="images/google-maps-fail.jpg">
+				</section>
+				<section>
+					<img src="images/binoculars.gif">
+				</section>
+				<section>
+					<h4>Види карт</h4>
+					<img src="images/tiles.jpg" style="width: 45%" />
+				</section>
+				<section>
+					<section>
+						<h4>Растрові карти</h4>
+					</section>
+					<section data-background-iframe="https://map-examples.herokuapp.com/public/dist/leaflet-example.html">
+					</section>
+					<section>
+						<h4>Переваги</h4>
+						<ul>
+							<li>
+								Мінімальне навантаження на процесор користувача
+							</li>
+							<li>
+								Простота розробки софту для відображення
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Недоліки</h4>
+						<ul>
+							<li>
+								Дуже великий обсяг
+							</li>
+							<li>
+								Неможливість динамічної зміни стилів
+							</li>
+							<li>
+								Навантаження на сервер
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Векторні карти</h4>
+					</section>
+					<section data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-example.html">
+					</section>
+					<section>
+						<h4>Переваги</h4>
+						<ul>
+							<li>
+								Набагато менший об'єм даних
+							</li>
+							<li>
+								Динамічна зміна відображення елементів
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Недоліки</h4>
+						<ul>
+							<li>
+								Ресурсомісткість і тривалість відтворення
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background-iframe="https://map-examples.herokuapp.com/public/dist/compare-example.html">
+				</section>
+				<section>
+					<section>
+						<h4>Рішення в лоб</h4>
+						<h5>Виводимо всі точки</h5>
+						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/leaflet-points.html">
+								leaflet
+							</a>
+						</div>
+						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points.html">
+								mapbox-gl
+							</a>
+						</div>
+					</section>
+					<section>
+						<h4>Недоліки</h4>
+						<ul>
+							<li>Всі дані тягнуться одночасно</li>
+							<li>Блокування основного потоку (Leaflet)</li>
+							<li>Дуже довго</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Кластерізація</h4>
+						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/leaflet-points-clusterization.html">
+								leaflet
+							</a>
+						</div>
+						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points-clusterization.html">
+								mapbox-gl
+							</a>
+						</div>
+					</section>
+					<section>
+						<h4>Недоліки</h4>
+						<ul>
+							<li>Всі дані тягнуться одночасно</li>
+							<li>На mapbox все ще довго</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>за допомогою тайлів</h4>
+						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/leaflet-points-tiles.html">
+								leaflet
+							</a>
+						</div>
+						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points-tiles.html">
+								mapbox-gl
+							</a>
+						</div>
+					</section>
+					<section>
+						<h4>Недоліки</h4>
+						<ul>
+							<li>На Leaflet незначні затупи</li>
+							<li>
+								Не можна вказувати динамічнне посилання на дані
+								<br />
+								(З 1.12.0 в mapbox можна динамічно змінювати посилання)
+							</li>
+							<li>Відсутня кластерізація</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h4><a target="_blank" href="https://github.com/mapbox/tippecanoe">tippecanoe</a> + <a target="_blank" href="https://openmaptiles.com/server/">tileserver</a></h4>
+					<img src="images/yes.gif">
+				</section>
+				<section>
+					<h4>А як же пошук?</h4>
+					<img src="images/no.gif">
+				</section>
+				<section>
+					<section>
+						<h4>Що ми плануємо робити далі?</h4>
+					</section>
+					<section>
+						<h4>Оптимізація пошуку</h4>
+						<ul>
+							<li>
+								Викорстати можливість зміни посилання для тайлів
+							</li>
+							<li>Експеременти з realtime віддачею тайлів</li>
+							<li>Кластерізація на сервері</li>
+						</ul>
+					</section>
+					<section
+							data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-3d-buildings.html"
+					></section>
+					<section
+							data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-custom-buildings.html"
+					></section>
+					<section
+							data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-3d-model.html"
+					></section>
+				</section>
+				<section>
+					<section>
+						<h4>Створення тайсетів</h4>
+						<ul>
+							<li><a target="_blank" href="https://github.com/mapbox/geojson-vt">geojson-vt</a></li>
+							<li><a target="_blank" href="https://github.com/mapbox/tippecanoe">tippecanoe</a></li>
+							<li><a target="_blank" href="https://tileserver.readthedocs.io/en/latest/">tileserver</a></li>
+							<li><a target="_blank" href="https://openmaptiles.com/server/">OpenMapTiles Map Server</a></li>
+							<li><a target="_blank" href="https://www.maptiler.com/">maptiler</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>Кластеризація</h4>
+						<ul>
+							<li><a target="_blank" href="https://github.com/mapbox/supercluster">supercluster</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>Створення власних стилів для карти</h4>
+						<ul>
+							<li><a target="_blank" href="https://www.mapbox.com/mapbox-studio/">mapbox-studio</a></li>
+							<li><a target="_blank" href="https://github.com/maputnik/editor">maputnik</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>Geocoding</h4>
+						<ul>
+							<li><a target="_blank" href="https://nominatim.org/">nominatim.org</a></li>
+							<li><a target="_blank" href="https://github.com/komoot/photon">photon</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>Генерація власних векторних тайлів</h4>
+						<ul>
+							<li><a target="_blank" href="https://github.com/openmaptiles/openmaptiles">openmaptiles</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>Робота з геоданими</h4>
+						<ul>
+							<li><a target="_blank" href="https://turfjs.org/">turfjs.org</a></li>
+							<li><a target="_blank" href="https://github.com/bjornharrtell/jsts">jsts</a></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Контактні дані</h2>
+					<div>
+						<img src="images/Borys_Mohyla.jpg" width="300" />
+						<section style="text-align: left; margin-left: 150px">
+							<span style="margin-right: 40px">site:</span>
+							<a target="_blank" href="https://boryamogila.github.io/">https://boryamogila.github.io</a>
+							<br>
+							<span style="margin-right: 40px">facebook:</span>
+							<a target="_blank" href="https://www.facebook.com/BorysMohyla">BorysMohyla</a>
+							<br>
+							<span style="margin-right: 40px">twitter:</span>
+							<a target="_blank" href="https://twitter.com/BoryaMogila">BoryaMogila</a>
+							<br>
+							<span style="margin-right: 40px">email:</span>
+							<a target="_blank" href="mailto:bora.mog@gmail.com">bora.mog@gmail.com</a>
+						</section>
+					</div>
+				</section>
+				<section>
+					<h2>
+						Дякую за увагу
+					</h2>
+					<img src="images/thanks.png">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
