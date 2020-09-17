@@ -94,7 +94,8 @@
 					<section>
 						<h4>Растрові карти</h4>
 					</section>
-					<section data-background-iframe="https://map-examples.herokuapp.com/public/dist/leaflet-example.html">
+					<section>
+						<img src="images/leaflet.gif" />
 					</section>
 					<section>
 						<h4>Переваги</h4>
@@ -126,7 +127,8 @@
 					<section>
 						<h4>Векторні карти</h4>
 					</section>
-					<section data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-example.html">
+					<section>
+						<img src="images/mapbox.gif" />
 					</section>
 					<section>
 						<h4>Переваги</h4>
@@ -148,17 +150,28 @@
 						</ul>
 					</section>
 				</section>
-				<section data-background-iframe="https://map-examples.herokuapp.com/public/dist/compare-example.html">
+				<section>
+					<img src="images/compare.gif" />
 				</section>
 				<section>
 					<section>
 						<h4>Рішення в лоб</h4>
 						<h5>Виводимо всі точки</h5>
+					</section>
+					<section>
+						<section>
+							<img src="images/geojson-leaflet.gif">
+						</section>
 						<div>
 							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/leaflet-points.html">
 								leaflet
 							</a>
 						</div>
+					</section>
+					<section>
+						<section>
+							<img src="images/geojson-mapbox.gif">
+						</section>
 						<div>
 							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points.html">
 								mapbox-gl
@@ -169,7 +182,7 @@
 						<h4>Недоліки</h4>
 						<ul>
 							<li>Всі дані тягнуться одночасно</li>
-							<li>Блокування основного потоку (Leaflet)</li>
+							<li>Блокування основного потоку (leaflet)</li>
 							<li>Дуже довго</li>
 						</ul>
 					</section>
@@ -177,11 +190,17 @@
 				<section>
 					<section>
 						<h4>Кластерізація</h4>
+					</section>
+					<section>
+						<img src="images/leaflet-cluster.gif" />
 						<div>
 							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/leaflet-points-clusterization.html">
 								leaflet
 							</a>
 						</div>
+					</section>
+					<section>
+						<img src="images/mapbox-cluster.gif" />
 						<div>
 							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points-clusterization.html">
 								mapbox-gl
@@ -200,10 +219,21 @@
 					<section>
 						<h4>за допомогою тайлів</h4>
 						<div>
+							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points-tiles.html">
+								mapbox-gl
+							</a>
+						</div>
+					</section>
+					<section>
+						<img src="images/leaflet-tiles.gif" />
+						<div>
 							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/leaflet-points-tiles.html">
 								leaflet
 							</a>
 						</div>
+					</section>
+					<section>
+						<img src="images/mapbox-tiles.gif" />
 						<div>
 							<a target="_blank" href="https://map-examples.herokuapp.com/public/dist/mapbox-points-tiles.html">
 								mapbox-gl
@@ -213,12 +243,7 @@
 					<section>
 						<h4>Недоліки</h4>
 						<ul>
-							<li>На Leaflet незначні затупи</li>
-							<li>
-								Не можна вказувати динамічнне посилання на дані
-								<br />
-								(З 1.12.0 в mapbox можна динамічно змінювати посилання)
-							</li>
+							<li>На leaflet незначні затупи</li>
 							<li>Відсутня кластерізація</li>
 						</ul>
 					</section>
@@ -228,32 +253,37 @@
 					<img src="images/yes.gif">
 				</section>
 				<section>
+					<img src="images/tippecanoe.gif" >
+				</section>
+				<section>
 					<h4>А як же пошук?</h4>
 					<img src="images/no.gif">
+				</section>
+				<section>
+					<h4>Серверна кластеризація</h4>
+					<img src="images/server-cluster.gif">
+				</section>
+				<section>
+					<h4>Створення тайл індекса на льоту</h4>
+					<img src="images/tile-index.gif">
+				</section>
+				<section>
+					<h4>Створення тайла на льоту</h4>
+					<img src="images/make-tiles.gif">
 				</section>
 				<section>
 					<section>
 						<h4>Що ми плануємо робити далі?</h4>
 					</section>
 					<section>
-						<h4>Оптимізація пошуку</h4>
-						<ul>
-							<li>
-								Викорстати можливість зміни посилання для тайлів
-							</li>
-							<li>Експеременти з realtime віддачею тайлів</li>
-							<li>Кластерізація на сервері</li>
-						</ul>
+						<img src="images/3d-buildings.gif" />
 					</section>
-					<section
-							data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-3d-buildings.html"
-					></section>
-					<section
-							data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-custom-buildings.html"
-					></section>
-					<section
-							data-background-iframe="https://map-examples.herokuapp.com/public/dist/mapbox-3d-model.html"
-					></section>
+					<section>
+						<img src="images/newbuildings.gif">
+					</section>
+					<section>
+						<img src="images/model.gif">
+					</section>
 				</section>
 				<section>
 					<section>
@@ -279,6 +309,11 @@
 						<h4>Кластеризація</h4>
 						<ul>
 							<li><a target="_blank" href="https://github.com/mapbox/supercluster">supercluster</a></li>
+							<li>
+								<a target="_blank" href="https://www.slideshare.net/EvgeniyKhist/serverside-geoclustering-based-on-geohash">
+									geohash кластеризація
+								</a>
+							</li>
 						</ul>
 					</section>
 					<section>
