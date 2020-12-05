@@ -21,31 +21,15 @@
 		position: fixed;
 		right: 10px;
 		top: 26px;
-		" src="images/vin_js.jpg">
-	<img style="
-					border: none;
-					box-shadow: none;
-		position: fixed;
-		left: 10px;
-		bottom: 26px;
-		height: 30px;
-		" src="images/dom.ria.png">
-	<img style="
-					border: none;
-					box-shadow: none;
-		height: 30px;
-		position: fixed;
-		left: 10px;
-		bottom: 66px;
-		" src="images/auto.ria.png">
-	<img style="
-					border: none;
-					box-shadow: none;
-		height: 30px;
-		position: fixed;
-		left: 10px;
-		bottom: 106px;
-    	" src="images/ria.png">
+		" src="images/mywebtech3.png">
+		<img style="
+		border: none;
+		box-shadow: none;
+height: 130px;
+position: fixed;
+left: 10px;
+top: 26px;
+" src="images/vin_js.jpg">
 		<div class="reveal">
 			<div class="slides">
 				<section>
@@ -56,7 +40,7 @@
 					<br />
 					<div style="text-align: right; font-size: 14px">
 						<b>Борис Могила</b>
-						<p>DOM.RIA (напрям “Новобудови України”)</p>
+						<p>&lt;EPAM&gt;</p>
 					</div>
 				</section>
 				<section>
@@ -70,7 +54,7 @@
 					<p>Презентація</p>
 				</section>
 				<section>
-					<img src="images/presentation.png" style="width: 55%" />
+					<img src="images/examples.png" style="width: 55%" />
 					<p>Приклади</p>
 				</section>
 				<section>
@@ -152,6 +136,105 @@
 				</section>
 				<section>
 					<img src="images/compare.gif" />
+				</section>
+				<section>
+					<section>
+						<h4>
+							GeoJson
+						</h4>
+						<img src="images/geojson.png" />
+					</section>
+					<section>
+						<h4>
+							Типи даних
+						</h4>
+						<ul>
+							<li>Point</li>
+							<li>LineString</li>
+							<li>Polygon</li>
+							<li>MultiPoint</li>
+							<li>MultiLineString</li>
+							<li>MultiPolygon</li>
+							<li>Feature</li>
+							<li>FeatureCollection</li>
+						</ul>
+					</section>
+					<section>
+						<pre>
+<code>
+{ "type": "Point",
+    "coordinates": [30, 10]
+}
+</code>
+<code>
+{ "type": "LineString",
+    "coordinates": [
+        [30, 10], [10, 30], [40, 40]
+    ]
+}
+</code>
+<code>
+{ "type": "Polygon",
+    "coordinates": [
+        [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+    ]
+}
+</code>
+						</pre>
+					</section>
+					<section>
+						<pre>
+<code>
+{ "type": "MultiPoint",
+    "coordinates": [
+        [10, 40], [40, 30], [20, 20], [30, 10]
+    ]
+}
+</code>
+<code>
+{ "type": "MultiLineString",
+    "coordinates": [
+        [[10, 10], [20, 20], [10, 40]],
+        [[40, 40], [30, 30], [40, 20], [30, 10]]
+    ]
+}
+</code>
+						</pre>
+					</section>
+					<section>
+						<pre>
+<code>
+{ "type": "MultiPolygon",
+    "coordinates": [
+        [
+            [[40, 40], [20, 45], [45, 30], [40, 40]]
+        ],
+        [
+            [[20, 35], [10, 30], [10, 10], [30, 5]
+            [[30, 20], [20, 15], [20, 25]]
+        ]
+    ]
+}
+</code></pre>
+					</section>
+					<section>
+						<pre>
+<code>
+{
+	"type": "FeatureCollection",
+	"features": [
+		{ "type": "Feature",
+			"geometry": {...},
+			"properties": {"prop0": "value0"}
+		},
+	]
+}
+</code>
+						</pre>
+					</section>
+					<section>
+						<img src="images/geojson-example.png" />
+					</section>
 				</section>
 				<section>
 					<section>
